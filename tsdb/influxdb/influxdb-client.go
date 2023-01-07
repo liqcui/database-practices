@@ -10,7 +10,7 @@ import (
 
 func main() {
 	// Create a new client using an InfluxDB server base URL and an authentication token
-	client := influxdb2.NewClient("http://192.168.56.10:8086", "YOUR-API-TOKEN")
+	client := influxdb2.NewClient("http://192.168.56.10:8086", "zjDdu3hIVhgu1SKwhHsPA_zmU2VnwtNQc4ftsSejTSO6jgjsKl3bzDhHz71zifv9mv0KC_x5vWlDZiLpacp70w==")
 	// Use blocking write client for writes to desired bucket
 	writeAPI := client.WriteAPIBlocking("rh-ocp-qe", "perfscale")
 	// Create point using full params constructor
